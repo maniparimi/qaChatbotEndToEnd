@@ -50,4 +50,4 @@ if user_input:
     response = generate_response(user_input, llm, temperature, max_tokens)
     st.write(response)
 else:
-    st.write("provide query")xs
+    st.write("provide query")
