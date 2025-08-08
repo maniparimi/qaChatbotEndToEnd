@@ -14,7 +14,7 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 import os
 from dotenv import load_dotenv
 load_dotenv()
-#give token here
+os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN")
 embeddings = HuggingFaceEmbeddings()
 
 st.title('Conversational RAG with PDF uploads and chat history')
